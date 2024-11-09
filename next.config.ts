@@ -1,10 +1,8 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+module.exports = {
   output: 'export',
   images: {
-    unoptimized: true, 
+    unoptimized: true, // Disable image optimization for static export
   },
+  basePath: '/portfolio-assignment',  // Set the base path for GitHub Pages
+  assetPrefix: '/portfolio-assignment', // Prefix for static assets (JS, CSS, etc.)
 };
-
-export default nextConfig;
